@@ -6,7 +6,6 @@ import StreamEdit from "./streams/StreamEdit";
 import StreamsList from "./streams/StreamsList";
 import StreamShow from "./streams/StreamShow";
 import Header from "./Header";
-//562518347229-ksjmcefo6asbscbq76k1lbu0ro18snk0.apps.googleusercontent.com
 
 // We don't want to use anchor tags with react router.
 //Anchor tags cause a new server request and a dumping of the HTML index file
