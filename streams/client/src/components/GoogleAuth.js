@@ -12,6 +12,8 @@ class GoogleAuth extends React.Component {
           scope: "email",
         })
         .then(() => {
+          //after auth is initialized, get an instance, then sheck to see if the user is signed in, then set an event listener
+          //to the auth isSignedIn function. Use onAuthChange, so when a user signs in or our it is called automatically.
           this.auth = window.gapi.auth2.getAuthInstance();
           this.onAuthChange(this.auth.isSignedIn.get());
           this.auth.isSignedIn.listen(this.onAuthChange);
